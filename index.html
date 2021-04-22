@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programul pentru efectuarea operatiilor aritmetice de baza</title>
+</head>
+
+<body>
+    <script>
+        var num1 = prompt("Introduceti primul numar:");
+        var operation = prompt("Introduceti semnul operatiei aritmetice (+, -, *, /):");
+        var num2 = prompt("Introduceti al doilea numar:");
+
+        if (operation === "+") {
+            var result = parseInt(num1) + parseInt(num2);
+            alert("Rezultatul adunarii este: " + result);
+        } else if (operation === "-") {
+            var result = parseInt(num1) - parseInt(num2);
+            alert("Rezultatul scaderii este: " + result);
+        } else if (operation === "*") {
+            var result = parseInt(num1) * parseInt(num2);
+            alert("Rezultatul inmultirii este: " + result);
+        } else if (operation === "/") {
+            var result = parseInt(num1) / parseInt(num2);
+            alert("Rezultatul impartirii este: " + result);
+        } else {
+            alert("Eroare: Operatorul de calcul introdus este gresit!")
+        }
+    </script>
+</body>
+
+</html>
