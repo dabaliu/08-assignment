@@ -23,11 +23,11 @@
         } else if (operation === "*") {
             var result = parseInt(num1) * parseInt(num2);
             alert("Rezultatul inmultirii este: " + result);
-        } else if (operation === "/") {
+        } else if (operation === "/" && num2 != "0") {
             var result = parseInt(num1) / parseInt(num2);
             alert("Rezultatul impartirii este: " + result);
         } else {
-            alert("Eroare: Operatorul de calcul introdus este gresit!")
+            alert("Eroare: Operatorul de calcul introdus este gresit sau al doilea operand are valoarea 0!")
         }
     </script>
 </body>
