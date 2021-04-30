@@ -14,17 +14,28 @@
         var operation = prompt("Introduceti semnul operatiei aritmetice (+, -, *, /):");
         var num2 = prompt("Introduceti al doilea numar:");
 
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+
+        if (isNaN(num1)) {
+            alert(num1 + " nu este un numar!");
+        }
+
+        if (isNaN(num2)) {
+            alert(num2 + " nu este un numar!");
+        }
+
         if (operation === "+") {
-            var result = parseInt(num1) + parseInt(num2);
+            var result = num1 + num2;
             alert("Rezultatul adunarii este: " + result);
         } else if (operation === "-") {
-            var result = parseInt(num1) - parseInt(num2);
+            var result = num1 - num2;
             alert("Rezultatul scaderii este: " + result);
         } else if (operation === "*") {
-            var result = parseInt(num1) * parseInt(num2);
+            var result = num1 * num2;
             alert("Rezultatul inmultirii este: " + result);
         } else if (operation === "/" && num2 != "0") {
-            var result = parseInt(num1) / parseInt(num2);
+            var result = num1 / num2;
             alert("Rezultatul impartirii este: " + result);
         } else {
             alert("Eroare: Operatorul de calcul introdus este gresit sau al doilea operand are valoarea 0!")
